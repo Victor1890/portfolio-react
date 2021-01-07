@@ -2,94 +2,81 @@ const projects = [
   {
     id: 1,
     image: {
-      src: '/projects/horushotel.png',
-      alt: 'Horus Hotel',
+      src: '/projects/Rick_and_Morty.png',
+      alt: 'Rick and Morty Wiki',
     },
     description: [
-      'Mobile application using Apache Cordova and Laravel.',
-      'Connection to Firebase for push notifications and deployed on Google Cloud.',
+      'A Single page application, create with React, NextJs and API the Rick and Morty.',
+      'Just out of curiosity, I created a Wiki of my favorite animated series to learn a little more about the series.',
     ],
     link: {
-      href: 'https://www.horus-sc.com',
+      href: 'https://github.com/Victor1890/rick_and_morty_wiki',
       isDisabled: false,
-      textLink: 'www.horus-sc.com',
+      textLink: 'Link to Github',
     },
   },
   {
     id: 2,
     image: {
-      src: '/projects/shopylive.png',
-      alt: 'Shopylive',
+      src: '/projects/covid-19.png',
+      alt: 'COVID-19 Tracker',
     },
     description: [
-      'Mobile application using React Native and NodeJs.',
-      'Sync with Firebase for OAuth and push notifications.',
+      'Web application using React, NodeJs, Axios and React Bootstrap.',
+      'To know the situation in relation to COVID-19.',
     ],
     link: {
-      href: 'https://www.shopylive.com',
+      href: 'https://github.com/Victor1890/COVID-19-Tracker',
       isDisabled: false,
-      textLink: 'www.shopylive.com',
+      textLink: 'Link to Github',
     },
   },
   {
     id: 3,
     image: {
-      src: '/companies/simple-legal.jpg',
-      alt: 'SimpleLegal',
+      src: '/projects/covid-19-v2.jpg',
+      alt: 'COVID-19 Tracker V2',
     },
     description: [
       'Single page application using ReactJS.',
-      'Firebase Kit for Real time database, auth and cloud functions.',
+      'To know the situation in relation to COVID-19.',
     ],
     link: {
-      href: '',
-      isDisabled: true,
-      textLink: '',
+      href: 'https://github.com/Victor1890/Covid_19-tracker',
+      isDisabled: false,
+      textLink: 'Link to Github',
+    },
+  },
+  {
+    id: 3,
+    image: {
+      src: '/projects/juventud_solidaria.png',
+      alt: 'Juventud Solidaria',
+    },
+    description: [
+      'A Web Site create with Bootstrap.',
+      'This website was created to help people with Covid-19',
+    ],
+    link: {
+      href: 'http://juventudsolidariard.org/',
+      isDisabled: false,
+      textLink: 'www.juventudsolidariard.org',
     },
   },
   {
     id: 4,
     image: {
-      src: '/companies/ela-sustentable.png',
-      alt: 'Ela Sustentable',
+      src: '/projects/mp3.png',
+      alt: 'MP3 Rosario Player',
     },
     description: [
-      'Single page application using ReactJS.',
-      'Django & Django rest framework for Rest API.',
+      'An App of music create with C#, Bunifu Framework, NAudio and Taglib-Sharp',
+      'This app is a music player that contains the basic functions of any player.',
     ],
     link: {
-      href: 'https://www.elasustentable.com',
+      href: 'https://github.com/Victor1890/Reproductor_M-sica',
       isDisabled: false,
-      textLink: 'www.elsasustentable.com',
-    },
-  },
-  {
-    id: 5,
-    image: {
-      src: '/companies/colorbeats.png',
-      alt: 'Colorbeats',
-    },
-    description: ['E-Commerce webpage using Shopify.'],
-    link: {
-      href: 'https://www.colorbeats.co',
-      isDisabled: false,
-      textLink: 'www.colorbeats.co',
-    },
-  },
-  {
-    id: 6,
-    image: {
-      src: '/companies/powerpay.png',
-      alt: 'Powerpay',
-    },
-    description: [
-      'Single page application using ReactJS.',
-      'REST API developed using Ruby on Rails.',
-    ],
-    link: {
-      href: 'https://www.getpowerpay.com',
-      isDisabled: false,
-      textLink: 'www.getpowerpay.com',
+      textLink: 'Link to Github',
     },
   },
 ];

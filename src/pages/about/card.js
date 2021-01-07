@@ -8,7 +8,7 @@ import Image from '../../components/image';
 import Link from '../../components/link';
 import { Typography } from '../../components/typography';
 
-const CardWrapper = styled.div`
+const CardWrapper = styled.article`
   align-items: center;
   border: 1px solid #e6ecf8;
   border-radius: 12px;
@@ -60,11 +60,11 @@ const Card = ({ image, descriptions, link, id }) => (
       disabled={link.isDisabled}
     >
       {link.isDisabled ? (
-        <Typography fontSize="0.8rem" color="#faa507">
+        <Typography fontSize="0.8rem" color="#076aeb">
           In development <GoTools />
         </Typography>
       ) : (
-        <Typography fontSize="0.8rem" fontWeight={600} color="#faa507">
+        <Typography fontSize="0.8rem" fontWeight={600} color="#076aeb">
           {link.textLink}
         </Typography>
       )}

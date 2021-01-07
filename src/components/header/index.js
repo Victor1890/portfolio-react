@@ -43,7 +43,7 @@ const MenuItem = styled.li`
   margin: 0;
   text-decoration: none;
   &:hover {
-    color: #faa507;
+    color: #076aeb;
     cursor: pointer;
   }
 `;

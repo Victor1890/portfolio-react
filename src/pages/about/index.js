@@ -4,12 +4,11 @@ import { Link } from '@reach/router';
 import styled from 'styled-components';
 
 import projects from '../../services/projects';
-import companies from '../../services/companies';
+import experiments from '../../services/experiments';
 
 import SEO from '../../components/seo';
 import Card from './card';
 import Layout from '../../components/layout';
-import Image from '../../components/image';
 import ListWrapper from '../../components/list';
 import { Title, Typography } from '../../components/typography';
 
@@ -33,7 +32,7 @@ const TextWrapper = styled.h2`
 `;
 
 const CallToAction = styled.span`
-  color: #faa507;
+  color: #076aeb;
   cursor: pointer;
   font-weight: 550;
 `;
@@ -44,16 +43,16 @@ const Divider = styled.div`
   width: 100vw;
 `;
 
-const Company = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0rem;
-  width: 200px;
-  @media (min-width: 968px) {
-    margin: 1rem;
-  }
-`;
+// const Company = styled.div`
+//   align-items: center;
+//   display: flex;
+//   justify-content: center;
+//   margin: 2rem 0rem;
+//   width: 200px;
+//   @media (min-width: 968px) {
+//     margin: 1rem;
+//   }
+// `;
 
 const About = ({ location: { pathname } }) => {
   return (
@@ -87,16 +86,26 @@ const About = ({ location: { pathname } }) => {
         <Divider />
         <Wrapper>
           <TextWrapper>
-            <Typography fontSize="1.75rem" fontWeight={700} textAlign="center">
+            <Title text="My Experiments" fontSize="1.75rem" fontWeight={700} />
+            {/* <Typography fontSize="1.75rem" fontWeight={700} textAlign="center">
               I&apos;m proud to have collaborated with some awesome companies:
-            </Typography>
+            </Typography> */}
           </TextWrapper>
-          <ListWrapper maxWidth="50rem" justifyContent="space-evenly">
-            {companies.map((company) => (
+          <ListWrapper maxWidth="70rem" justifyContent="space-evenly">
+            {experiments.map((experiment) => (
+              <Card
+                id={experiment.id}
+                key={experiment.id}
+                image={experiment.image}
+                descriptions={experiment.description}
+                link={experiment.link}
+              />
+            ))}
+            {/* {companies.map((company) => (
               <Company key={company.id}>
                 <Image alt={company.name} src={company.logo} maxHeight="7rem" />
               </Company>
-            ))}
+            ))} */}
           </ListWrapper>
         </Wrapper>
       </Container>

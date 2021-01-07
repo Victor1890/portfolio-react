@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const LinkComponent = styled.a`
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
-  color: #faa507;
+  color: #076aeb;
   margin: 0 auto;
   text-decoration: none;
 `;

@@ -25,7 +25,7 @@ const careerInfo = [
     title: 'Backend Develoment & Others',
     description: `A visually impressive site but without functionality, is the same as being rich and not knowing what to spend on, to avoid this, I am also a person capable of creating both visual and functional websites.`,
     knowledgeList:
-      'Terminal, Git, Github, ASP.NET C#, JavaScript, NodeJs, ExpressJs, MongoDB, SQL Server.',
+      'Terminal, Git, Github, ASP.NET C#, JavaScript, TypeScript, NodeJs, ExpressJs, MongoDB, SQL Server.',
   },
 ];
 

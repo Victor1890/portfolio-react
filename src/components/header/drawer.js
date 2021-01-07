@@ -30,7 +30,7 @@ const ResponsiveItem = styled.li`
   text-align: center;
   width: 100vw;
   &:hover {
-    color: #faa507;
+    color: #076aeb;
     cursor: pointer;
   }
 `;
