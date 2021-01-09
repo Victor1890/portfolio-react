@@ -119,14 +119,14 @@ const LandingPage = ({ location: { pathname } }) => (
     <CenteredContainer variantBackground>
       <CenteredWrapper>
         <Title color="white" fontSize="2rem" fontWeight={700}>
-          Hi, I&apos;m Santiago. Pleasure to meet you.
+          Hi, I&apos;m Victor. Pleasure to meet you.
         </Title>
         <Typography color="white" textAlign="center">
-          Coming from Barranquilla, Colombia, I started my journey as a
-          developer in 2018. I have special interest in front-end and mobile
-          development, where I have worked most of my projects and potentialized
-          my skills. A fan of learning and interacting with new technologies,
-          these are the skills I have learned and improved during my journey.
+          I started my journey as a developer in 2018. I have a special interest
+          in frontend and backend development, where it has worked most of my
+          projects and increases my skills. A fan of learning and interacting
+          with new technologies, these are the skills that I have learned and
+          improved during this fantastic journey.
         </Typography>
       </CenteredWrapper>
     </CenteredContainer>

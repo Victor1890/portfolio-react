@@ -68,16 +68,15 @@ const Experiments = [
   {
     id: 5,
     image: {
-      src: '/experiments/cyberpunk.png',
-      alt: 'Cyberpunk 2077 menu inGame',
+      src: '/experiments/music.jpg',
+      alt: 'VictorBOT Discord-Music',
     },
     description: [
-      'This menu is create with HTML and CSS.',
-      "'is not responsive'",
-      'This menu is inspired by the popular Cyberpunk 2077 video game',
+      'This BOT is create with JS and DiscordJs',
+      'This bot was created so that I could have my own bot and just out of curiosity, I added the musical function',
     ],
     link: {
-      href: 'https://github.com/Victor1890/Cyberpunk-2077-InGame-Menu',
+      href: 'https://github.com/Victor1890/Victor1890_BOT',
       isDisabled: false,
       textLink: 'Link to Github',
     },
