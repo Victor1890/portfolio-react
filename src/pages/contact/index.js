@@ -72,25 +72,19 @@ const Contact = ({ location: { pathname } }) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+
     const formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
     formData.append('message', message);
 
-    const request = new Request(`${process.env.REACT_APP_REQUEST_URL}`);
-    const data = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-      },
-      body: formData,
-    };
+    const endPoint = `${process.env.REACT_APP_REQUEST_URL}`;
 
-    fetch(request, data)
+    await fetch(endPoint, { method: 'POST', body: formData })
       .then(() => {
-        window.location.replace(`${process.env.REACT_APP_BASE_URL}/success`);
+        window.location.replace(`${window.location.origin}/success`);
       })
       .catch((e) => console.error(e));
   };
@@ -107,7 +101,7 @@ const Contact = ({ location: { pathname } }) => {
           Thanks for taking the time to reach out. How can I help you today?
         </Title>
       </SectionTitle>
-      <Form onSubmit={handleSubmit} autoComplete="on">
+      <Form onSubmit={handleSubmit} autoComplete="on" method="POST">
         <Row>
           <FieldWrapper>
             <Label>Your name</Label>
@@ -123,7 +117,7 @@ const Contact = ({ location: { pathname } }) => {
             <Label>Your Email</Label>
             <Input
               type="email"
-              name="_replyto"
+              name="email"
               required
               onChange={(e) => setEmail(e.target.value)}
               value={email}

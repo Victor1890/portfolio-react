@@ -172,7 +172,7 @@ const LandingPage = ({ location: { pathname } }) => (
             </TextWrapper>
             <ButtonWrapper>
               <a
-                href={`${process.env.REACT_APP_RESUME_URL}/export?format=pdf`}
+                href={`${process.env.REACT_APP_RESUME_URL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ margin: ' 0 auto' }}
