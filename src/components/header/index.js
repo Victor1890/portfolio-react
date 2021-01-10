@@ -54,6 +54,7 @@ const ResponsiveButton = styled.button`
   cursor: pointer;
   display: block;
   font-size: 1.5rem;
+  outline: none;
   z-index: 3;
   @media (min-width: 1024px) {
     display: none;
