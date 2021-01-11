@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/victorrosario1890.github.io/static/css/main.5fcf1197.chunk.css",
+    "main.js": "/victorrosario1890.github.io/static/js/main.5a02f121.chunk.js",
+    "main.js.map": "/victorrosario1890.github.io/static/js/main.5a02f121.chunk.js.map",
+    "runtime-main.js": "/victorrosario1890.github.io/static/js/runtime-main.e89316a0.js",
+    "runtime-main.js.map": "/victorrosario1890.github.io/static/js/runtime-main.e89316a0.js.map",
+    "static/js/2.bf3db3ef.chunk.js": "/victorrosario1890.github.io/static/js/2.bf3db3ef.chunk.js",
+    "static/js/2.bf3db3ef.chunk.js.map": "/victorrosario1890.github.io/static/js/2.bf3db3ef.chunk.js.map",
+    "index.html": "/victorrosario1890.github.io/index.html",
+    "precache-manifest.cb4a405dd8c67452bc36a15c64e1be64.js": "/victorrosario1890.github.io/precache-manifest.cb4a405dd8c67452bc36a15c64e1be64.js",
+    "service-worker.js": "/victorrosario1890.github.io/service-worker.js",
+    "static/css/main.5fcf1197.chunk.css.map": "/victorrosario1890.github.io/static/css/main.5fcf1197.chunk.css.map",
+    "static/js/2.bf3db3ef.chunk.js.LICENSE.txt": "/victorrosario1890.github.io/static/js/2.bf3db3ef.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e89316a0.js",
+    "static/js/2.bf3db3ef.chunk.js",
+    "static/css/main.5fcf1197.chunk.css",
+    "static/js/main.5a02f121.chunk.js"
+  ]
+}
