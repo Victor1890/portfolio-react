@@ -48,6 +48,18 @@ const MenuItem = styled.li`
   }
 `;
 
+const MenuSelect = styled.select`
+  color: #00343d;
+  font-size: 0.875rem;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    color: #076aeb;
+    cursor: pointer;
+  }
+`;
+
 const ResponsiveButton = styled.button`
   background: transparent;
   border: none;
@@ -83,6 +95,10 @@ const Header = () => {
         />
       </Link>
       <Menu>
+        <MenuSelect>
+          <option value="ES">ES</option>
+          <option value="EN">EN</option>
+        </MenuSelect>
         <Link
           to="/about"
           style={{
