@@ -48,17 +48,17 @@ const MenuItem = styled.li`
   }
 `;
 
-const MenuSelect = styled.select`
-  color: #00343d;
-  font-size: 0.875rem;
-  margin: 0;
-  text-decoration: none;
-  outline: none;
-  &:hover {
-    color: #076aeb;
-    cursor: pointer;
-  }
-`;
+// const MenuSelect = styled.select`
+//   color: #00343d;
+//   font-size: 0.875rem;
+//   margin: 0;
+//   text-decoration: none;
+//   outline: none;
+//   &:hover {
+//     color: #076aeb;
+//     cursor: pointer;
+//   }
+// `;
 
 const ResponsiveButton = styled.button`
   background: transparent;
@@ -95,10 +95,10 @@ const Header = () => {
         />
       </Link>
       <Menu>
-        <MenuSelect>
+        {/* <MenuSelect>
           <option value="ES">ES</option>
           <option value="EN">EN</option>
-        </MenuSelect>
+        </MenuSelect> */}
         <Link
           to="/about"
           style={{

@@ -36,41 +36,49 @@ const CardContent = styled.div`
   height: 10rem;
 `;
 
-const Card = ({ image, descriptions, link, id }) => (
-  <CardWrapper key={id}>
-    <ImageWrapper>
-      <Image
-        alt={image.alt}
-        src={image.src}
-        maxHeight="6rem"
-        maxWidth="10rem"
-      />
-    </ImageWrapper>
-    <CardContent>
-      {descriptions.map((description) => (
-        <Typography textAlign="center" fontSize="0.85rem" key={description}>
-          {description}
-        </Typography>
-      ))}
-    </CardContent>
-    <Link
-      href={link.href}
-      rel="noopener noreferrer"
-      target="_blank"
-      disabled={link.isDisabled}
-    >
-      {link.isDisabled ? (
-        <Typography fontSize="0.8rem" color="#076aeb">
-          In development <GoTools />
-        </Typography>
-      ) : (
-        <Typography fontSize="0.8rem" fontWeight={600} color="#076aeb">
-          {link.textLink}
-        </Typography>
-      )}
-    </Link>
-  </CardWrapper>
-);
+const GlobalCard = styled.div`
+  cursor: pointer;
+`;
+
+const Card = ({ image, descriptions, link, id, onActive }) => {
+  return (
+    <GlobalCard onClick={onActive}>
+      <CardWrapper key={id}>
+        <ImageWrapper>
+          <Image
+            alt={image.alt}
+            src={image.src}
+            maxHeight="6rem"
+            maxWidth="10rem"
+          />
+        </ImageWrapper>
+        <CardContent>
+          {descriptions.map((description) => (
+            <Typography textAlign="center" fontSize="0.85rem" key={description}>
+              {description}
+            </Typography>
+          ))}
+        </CardContent>
+        <Link
+          href={link.href}
+          rel="noopener noreferrer"
+          target="_blank"
+          disabled={link.isDisabled}
+        >
+          {link.isDisabled ? (
+            <Typography fontSize="0.8rem" color="#076aeb">
+              In development <GoTools />
+            </Typography>
+          ) : (
+            <Typography fontSize="0.8rem" fontWeight={600} color="#076aeb">
+              {link.textLink}
+            </Typography>
+          )}
+        </Link>
+      </CardWrapper>
+    </GlobalCard>
+  );
+};
 
 Card.propTypes = {
   image: PropTypes.shape({
@@ -84,6 +92,7 @@ Card.propTypes = {
     textLink: PropTypes.string.isRequired,
   }).isRequired,
   id: PropTypes.number.isRequired,
+  onActive: PropTypes.func.isRequired,
 };
 
 export default Card;

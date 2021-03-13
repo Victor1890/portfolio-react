@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { PaperIcon } from './stylesLanding';
 
 import styled from 'styled-components';
 
@@ -17,12 +18,6 @@ const PaperColumn = styled.div`
       props.lastColumn ? '0px solid #e6ecf8' : '1px solid #e6ecf8'};
     flex-direction: row;
   }
-`;
-const PaperIcon = styled.div`
-  color: #012452;
-  font-size: 54px;
-  margin-bottom: 1.45rem;
-  text-align: center;
 `;
 
 const Paper = ({
