@@ -21,7 +21,7 @@ import {
 import ModalPortal from '../../components/modal/index';
 
 const About = ({ location: { pathname } }) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const handlClick = () => {
     setShowModal(true);

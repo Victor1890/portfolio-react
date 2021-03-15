@@ -56,7 +56,7 @@ export const TransitionButton = ({
   type,
   minWidth,
   onClick,
-  hoverColor,
+  hoverColor = '#012452',
 }) => (
   <TransitionButtonComponent
     value={value}
