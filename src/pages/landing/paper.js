@@ -1,24 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PaperIcon } from './stylesLanding';
-
-import styled from 'styled-components';
 
 import { Title, Typography } from '../../components/typography';
 
-const PaperColumn = styled.div`
-  border-bottom: ${(props) =>
-    props.lastColumn ? '0px solid #e6ecf8' : '1px solid #e6ecf8'};
-  margin: 0 auto;
-  padding: 2rem;
-  width: 100%;
-  @media (min-width: 1080px) {
-    border-bottom: 0px solid #e6ecf8;
-    border-right: ${(props) =>
-      props.lastColumn ? '0px solid #e6ecf8' : '1px solid #e6ecf8'};
-    flex-direction: row;
-  }
-`;
+import { PaperIcon, PaperColumn } from '../../styles/stylesLanding';
 
 const Paper = ({
   icon,

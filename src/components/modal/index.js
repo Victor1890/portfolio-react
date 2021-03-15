@@ -1,6 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+import { TransitionButton } from '../button/index';
+import Image from '../image/index';
 
 const ModalWrapper = styled.div`
   background-color: rgba(225, 225, 225, 0.8);
@@ -12,30 +16,52 @@ const ModalWrapper = styled.div`
   right: 0;
 `;
 
-const ModalContent = styled.div`
+const ModalCard = styled.div`
   background: #f0f0f0;
-  width: 300px;
+  width: calc(100% - 10%);
   height: 80vh;
   padding: 10px 20px;
   margin: 10vh auto;
 `;
 
-const Modal = ({ children, onClose }) => {
+const ModalUp = styled.div`
+  float: right;
+`;
+
+const ModalContent = styled.article`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Modal = ({ onClose }) => {
   return (
     <ModalWrapper>
-      <ModalContent>
-        <button onClick={onClose}>X</button>
-        {children}
-      </ModalContent>
+      <ModalCard>
+        <ModalUp>
+          <TransitionButton value="X" onClick={onClose} hoverColor="#df4230" />
+          <ModalContent>
+            <Image
+              maxWidth={10}
+              minHeight={10}
+              src="https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png"
+              alt="tesr"
+            />
+          </ModalContent>
+        </ModalUp>
+      </ModalCard>
     </ModalWrapper>
   );
 };
 
-const ModalPortal = ({ children, onClose }) => {
+const ModalPortal = ({ onClose }) => {
   return ReactDOM.createPortal(
-    <Modal onClose={onClose}>{children}</Modal>,
+    <Modal onClose={onClose} />,
     document.getElementById('modal-root'),
   );
+};
+
+Modal.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 export default ModalPortal;

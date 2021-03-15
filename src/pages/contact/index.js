@@ -14,7 +14,7 @@ import {
   TextArea,
   Label,
   FieldWrapper,
-} from './stylesContact';
+} from '../../styles/stylesContact';
 
 const Contact = ({ location: { pathname } }) => {
   const [name, setName] = useState('');

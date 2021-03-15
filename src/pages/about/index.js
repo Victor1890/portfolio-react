@@ -16,7 +16,7 @@ import {
   Divider,
   TextWrapper,
   Wrapper,
-} from './stylesAbout';
+} from '../../styles/stylesAbout';
 
 import ModalPortal from '../../components/modal/index';
 
@@ -48,7 +48,7 @@ const About = ({ location: { pathname } }) => {
             </Link>
           </Typography>
           <ListWrapper maxWidth="70rem">
-            {showModal && <ModalPortal onClose={handlClose}>hola</ModalPortal>}
+            {showModal && <ModalPortal onClose={handlClose} />}
             {projects.map((project) => (
               <Card
                 onActive={handlClick}

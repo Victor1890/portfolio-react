@@ -12,7 +12,7 @@ const DefaultButtonComponent = styled.input`
   min-width: ${(props) => props.minWidth};
   padding: 0.5rem;
   &:hover {
-    background: #012452;
+    background: ${(props) => props.hoverColor};
     color: #fff;
     cursor: pointer;
   }
@@ -25,14 +25,25 @@ const TransitionButtonComponent = styled(DefaultButtonComponent)`
   }
 `;
 
-export const DefaultButton = ({ value, type, minWidth }) => (
-  <DefaultButtonComponent value={value} type={type} minWidth={minWidth} />
+export const DefaultButton = ({
+  value,
+  type,
+  minWidth,
+  hoverColor = '#012452',
+}) => (
+  <DefaultButtonComponent
+    value={value}
+    type={type}
+    minWidth={minWidth}
+    hoverColor={hoverColor}
+  />
 );
 
 DefaultButton.propTypes = {
   value: PropTypes.string.isRequired,
   type: PropTypes.string,
   minWidth: PropTypes.string,
+  hoverColor: PropTypes.string,
 };
 
 DefaultButton.defaultProps = {
@@ -40,14 +51,28 @@ DefaultButton.defaultProps = {
   minWidth: 'auto',
 };
 
-export const TransitionButton = ({ value, type, minWidth }) => (
-  <TransitionButtonComponent value={value} type={type} minWidth={minWidth} />
+export const TransitionButton = ({
+  value,
+  type,
+  minWidth,
+  onClick,
+  hoverColor,
+}) => (
+  <TransitionButtonComponent
+    value={value}
+    type={type}
+    minWidth={minWidth}
+    onClick={onClick}
+    hoverColor={hoverColor}
+  />
 );
 
 TransitionButton.propTypes = {
   value: PropTypes.string.isRequired,
   type: PropTypes.string,
   minWidth: PropTypes.string,
+  onClick: PropTypes.func,
+  hoverColor: PropTypes.string,
 };
 
 TransitionButton.defaultProps = {
