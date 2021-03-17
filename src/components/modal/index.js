@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { TransitionButton } from '../button/index';
+import { TransitionButton, DefaultButton } from '../button/index';
 import { Title, Typography } from '../typography/index';
 import Image from '../image/index';
 
@@ -37,41 +37,59 @@ const ModalContent = styled.article`
 `;
 
 const ModalFooter = styled.div`
+  width: 20%;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 `;
 
-const Modal = ({ onClose }) => {
+const Link = styled.a`
+  color: #141c3a;
+  text-decoration: none;
+`;
+
+const Modal = ({
+  onClose,
+  imgPoster,
+  title,
+  descriptions,
+  linkCode,
+  linkWeb,
+  alt,
+}) => {
   return (
     <ModalWrapper>
       <ModalCard>
         <ModalUp>
-          <TransitionButton value="X" onClick={onClose} hoverColor="#df4230" />
+          <TransitionButton
+            isHover={false}
+            value="X"
+            onClick={onClose}
+            hoverColor="#df4230"
+          />
         </ModalUp>
         <ModalContent>
           <Title fontSize="2rem" fontWeight={700}>
-            Victor
+            {'Victor' || title}
           </Title>
           <Image
             height="22rem"
             width="40rem"
-            src="https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png"
-            alt="tesr"
+            src={
+              'https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png' || imgPoster
+            }
+            alt={alt}
           />
           <br />
-          <Typography textAlign="center">
-            I started my journey as a developer in 2018. I have a special
-            interest in frontend and backend development, where it has worked
-            most of my projects and increases my skills. A fan of learning and
-            interacting with new technologies, these are the skills that I have
-            learned and improved during this fantastic journey.
-          </Typography>
+          <Typography textAlign="center">{descriptions}</Typography>
 
           <ModalFooter>
-            <TransitionButton />
-            <TransitionButton />
+            <Link href={linkCode} target="_blank" rel="noopener noreferrer">
+              <DefaultButton value="✌ Link to Code" />
+            </Link>
+            <Link href={linkWeb} target="_blank" rel="noopener noreferrer">
+              <DefaultButton value="🌟 Website" />
+            </Link>
           </ModalFooter>
         </ModalContent>
       </ModalCard>
@@ -79,15 +97,36 @@ const Modal = ({ onClose }) => {
   );
 };
 
-const ModalPortal = ({ onClose }) => {
+const ModalPortal = ({
+  onClose,
+  imgPoster,
+  title,
+  descriptions,
+  linkCode,
+  linkWeb,
+  alt,
+}) => {
   return ReactDOM.createPortal(
-    <Modal onClose={onClose} />,
+    <Modal
+      onClose={onClose}
+      title={title}
+      description={descriptions}
+      linkCode={linkCode}
+      linkWeb={linkWeb}
+      imgPoster={imgPoster}
+      alt={alt}
+    />,
     document.getElementById('modal-root'),
   );
 };
 
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  linkWeb: PropTypes.string.isRequired,
+  imgPoster: PropTypes.string.isRequired,
 };
 
 export default ModalPortal;

@@ -40,10 +40,10 @@ const GlobalCard = styled.div`
   cursor: pointer;
 `;
 
-const Card = ({ image, descriptions, link, id, onActive }) => {
+const Card = ({ image, descriptions, link, onActive }) => {
   return (
     <GlobalCard onClick={onActive}>
-      <CardWrapper key={id}>
+      <CardWrapper>
         <ImageWrapper>
           <Image
             alt={image.alt}
@@ -91,8 +91,7 @@ Card.propTypes = {
     isDisabled: PropTypes.bool.isRequired,
     textLink: PropTypes.string.isRequired,
   }).isRequired,
-  id: PropTypes.number.isRequired,
-  onActive: PropTypes.func.isRequired,
+  onActive: PropTypes.func,
 };
 
 export default Card;

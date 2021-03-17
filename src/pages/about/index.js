@@ -48,15 +48,22 @@ const About = ({ location: { pathname } }) => {
             </Link>
           </Typography>
           <ListWrapper maxWidth="70rem">
-            {showModal && <ModalPortal onClose={handlClose} />}
             {projects.map((project) => (
-              <Card
-                onActive={handlClick}
-                id={project.id}
-                image={project.image}
-                descriptions={project.description}
-                link={project.link}
-              />
+              <div id={project.id}>
+                <Card
+                  onActive={handlClick}
+                  image={project.image}
+                  descriptions={project.description}
+                  link={project.link}
+                />
+                {showModal && (
+                  <ModalPortal
+                    onClose={handlClose}
+                    descriptions={project.description}
+                    link={project.link.href}
+                  />
+                )}
+              </div>
             ))}
           </ListWrapper>
         </Wrapper>
@@ -70,13 +77,13 @@ const About = ({ location: { pathname } }) => {
           </TextWrapper>
           <ListWrapper maxWidth="70rem" justifyContent="space-evenly">
             {experiments.map((experiment) => (
-              <Card
-                id={experiment.id}
-                key={experiment.id}
-                image={experiment.image}
-                descriptions={experiment.description}
-                link={experiment.link}
-              />
+              <div key={experiment.id}>
+                <Card
+                  image={experiment.image}
+                  descriptions={experiment.description}
+                  link={experiment.link}
+                />
+              </div>
             ))}
             {/* {companies.map((company) => (
               <Company key={company.id}>

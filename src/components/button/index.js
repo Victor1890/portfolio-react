@@ -21,7 +21,7 @@ const DefaultButtonComponent = styled.input`
 const TransitionButtonComponent = styled(DefaultButtonComponent)`
   transition: padding 0.3s ease-in-out;
   &:hover {
-    padding: 0.5rem 1rem;
+    padding: ${(props) => props.isHover && '0.5rem 1rem;'};
   }
 `;
 
@@ -57,6 +57,7 @@ export const TransitionButton = ({
   minWidth,
   onClick,
   hoverColor = '#012452',
+  isHover = true,
 }) => (
   <TransitionButtonComponent
     value={value}
@@ -64,6 +65,7 @@ export const TransitionButton = ({
     minWidth={minWidth}
     onClick={onClick}
     hoverColor={hoverColor}
+    isHover={isHover}
   />
 );
 

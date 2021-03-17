@@ -19,7 +19,7 @@ const Container = styled.div`
   padding: 0 0.5rem;
   padding-top: 3rem;
   width: 100%;
-  zindex: 3;
+  z-index: 3;
   @media (min-width: 1024px) {
     padding-top: 2.5rem;
   }
