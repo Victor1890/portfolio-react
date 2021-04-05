@@ -1,6 +1,7 @@
 const projects = [
   {
     id: 1,
+    title: 'Rick and Morty Wiki',
     image: {
       src: '/projects/Rick_and_Morty.png',
       alt: 'Rick and Morty Wiki',
@@ -17,6 +18,7 @@ const projects = [
   },
   {
     id: 2,
+    title: 'COVID-19 Tracker',
     image: {
       src: '/projects/covid-19.png',
       alt: 'COVID-19 Tracker',
@@ -33,6 +35,7 @@ const projects = [
   },
   {
     id: 3,
+    title: 'COVID-19 Tracker V2',
     image: {
       src: '/projects/covid-19-v2.jpg',
       alt: 'COVID-19 Tracker V2',
@@ -49,6 +52,7 @@ const projects = [
   },
   {
     id: 3,
+    title: 'Juventud Solidaria',
     image: {
       src: '/projects/juventud_solidaria.png',
       alt: 'Juventud Solidaria',
@@ -65,6 +69,7 @@ const projects = [
   },
   {
     id: 4,
+    title: 'MP3 Rosario Player',
     image: {
       src: '/projects/mp3.png',
       alt: 'MP3 Rosario Player',

@@ -70,13 +70,15 @@ const Modal = ({
         </ModalUp>
         <ModalContent>
           <Title fontSize="2rem" fontWeight={700}>
-            {'Victor' || title}
+            {title}
           </Title>
           <Image
             height="22rem"
             width="40rem"
             src={
-              'https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png' || imgPoster
+              imgPoster == null
+                ? 'https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png'
+                : imgPoster
             }
             alt={alt}
           />
@@ -105,6 +107,7 @@ const ModalPortal = ({
   linkCode,
   linkWeb,
   alt,
+  children,
 }) => {
   return ReactDOM.createPortal(
     <Modal

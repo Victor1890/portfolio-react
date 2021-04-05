@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from '@reach/router';
+import { motion } from 'framer-motion';
 
 import projects from '../../services/projects';
 import experiments from '../../services/experiments';
@@ -21,7 +22,7 @@ import {
 import ModalPortal from '../../components/modal/index';
 
 const About = ({ location: { pathname } }) => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handlClick = () => {
     setShowModal(true);
@@ -49,7 +50,15 @@ const About = ({ location: { pathname } }) => {
           </Typography>
           <ListWrapper maxWidth="70rem">
             {projects.map((project) => (
-              <div id={project.id}>
+              <motion.div
+                id={project.id}
+                whileHover={{
+                  position: 'relative',
+                  zIndex: 1,
+                  scale: 1.1,
+                  transition: { duration: 0.2 },
+                }}
+              >
                 <Card
                   onActive={handlClick}
                   image={project.image}
@@ -58,12 +67,13 @@ const About = ({ location: { pathname } }) => {
                 />
                 {showModal && (
                   <ModalPortal
+                    title={project.title}
                     onClose={handlClose}
                     descriptions={project.description}
                     link={project.link.href}
                   />
                 )}
-              </div>
+              </motion.div>
             ))}
           </ListWrapper>
         </Wrapper>
