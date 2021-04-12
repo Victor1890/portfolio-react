@@ -51,7 +51,7 @@ const About = ({ location: { pathname } }) => {
           <ListWrapper maxWidth="70rem">
             {projects.map((project) => (
               <motion.div
-                id={project.id}
+                key={project.id}
                 whileHover={{
                   position: 'relative',
                   zIndex: 1,
@@ -65,14 +65,15 @@ const About = ({ location: { pathname } }) => {
                   descriptions={project.description}
                   link={project.link}
                 />
-                {showModal && (
-                  <ModalPortal
-                    title={project.title}
-                    onClose={handlClose}
-                    descriptions={project.description}
-                    link={project.link.href}
-                  />
-                )}
+
+                <ModalPortal
+                  keyId={project.id}
+                  title={project.title}
+                  onActive={showModal}
+                  onClose={handlClose}
+                  descriptions={project.description}
+                  link={project.link.href}
+                />
               </motion.div>
             ))}
           </ListWrapper>

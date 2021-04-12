@@ -49,6 +49,8 @@ const Link = styled.a`
 `;
 
 const Modal = ({
+  keyId,
+  onActive,
   onClose,
   imgPoster,
   title,
@@ -57,49 +59,56 @@ const Modal = ({
   linkWeb,
   alt,
 }) => {
+  console.log(keyId);
   return (
-    <ModalWrapper>
-      <ModalCard>
-        <ModalUp>
-          <TransitionButton
-            isHover={false}
-            value="X"
-            onClick={onClose}
-            hoverColor="#df4230"
-          />
-        </ModalUp>
-        <ModalContent>
-          <Title fontSize="2rem" fontWeight={700}>
-            {title}
-          </Title>
-          <Image
-            height="22rem"
-            width="40rem"
-            src={
-              imgPoster == null
-                ? 'https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png'
-                : imgPoster
-            }
-            alt={alt}
-          />
-          <br />
-          <Typography textAlign="center">{descriptions}</Typography>
+    onActive && (
+      <ModalWrapper key={keyId}>
+        <ModalCard>
+          <ModalUp>
+            <TransitionButton
+              isHover={false}
+              value="X"
+              onClick={onClose}
+              hoverColor="#df4230"
+            />
+          </ModalUp>
+          <ModalContent>
+            <Title fontSize="2rem" fontWeight={700}>
+              {title}
+            </Title>
+            <Image
+              height="22rem"
+              width="40rem"
+              src={
+                imgPoster == null
+                  ? 'https://w.wallhaven.cc/full/pk/wallhaven-pkkm6p.png'
+                  : imgPoster
+              }
+              alt={alt}
+            />
+            <br />
+            {descriptions.map((description) => (
+              <Typography textAlign="center">{description}</Typography>
+            ))}
 
-          <ModalFooter>
-            <Link href={linkCode} target="_blank" rel="noopener noreferrer">
-              <DefaultButton value="✌ Link to Code" />
-            </Link>
-            <Link href={linkWeb} target="_blank" rel="noopener noreferrer">
-              <DefaultButton value="🌟 Website" />
-            </Link>
-          </ModalFooter>
-        </ModalContent>
-      </ModalCard>
-    </ModalWrapper>
+            <ModalFooter>
+              <Link href={linkCode} target="_blank" rel="noopener noreferrer">
+                <DefaultButton value="✌ Link to Code" />
+              </Link>
+              <Link href={linkWeb} target="_blank" rel="noopener noreferrer">
+                <DefaultButton value="🌟 Website" />
+              </Link>
+            </ModalFooter>
+          </ModalContent>
+        </ModalCard>
+      </ModalWrapper>
+    )
   );
 };
 
 const ModalPortal = ({
+  keyId,
+  onActive,
   onClose,
   imgPoster,
   title,
@@ -107,13 +116,16 @@ const ModalPortal = ({
   linkCode,
   linkWeb,
   alt,
-  children,
 }) => {
+  console.log(title);
+
   return ReactDOM.createPortal(
     <Modal
+      keyId={keyId}
+      onActive={onActive}
       onClose={onClose}
       title={title}
-      description={descriptions}
+      descriptions={descriptions}
       linkCode={linkCode}
       linkWeb={linkWeb}
       imgPoster={imgPoster}
