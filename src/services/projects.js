@@ -10,10 +10,11 @@ const projects = [
       'A Single page application, create with React, NextJs and API the Rick and Morty.',
       'Just out of curiosity, I created a Wiki of my favorite animated series to learn a little more about the series.',
     ],
-    link: {
-      href: 'https://github.com/Victor1890/rick_and_morty_wiki',
+    links: {
+      linkCode: 'https://github.com/Victor1890/rick_and_morty_wiki',
+      linkWeb: '',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textlink: 'Link to Github',
     },
   },
   {
@@ -27,10 +28,11 @@ const projects = [
       'Web application using React, NodeJs, Axios and React Bootstrap.',
       'To know the situation in relation to COVID-19.',
     ],
-    link: {
-      href: 'https://github.com/Victor1890/COVID-19-Tracker',
+    links: {
+      linkCode: 'https://github.com/Victor1890/COVID-19-Tracker',
+      linkWeb: '',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textlink: 'Link to Github',
     },
   },
   {
@@ -44,10 +46,11 @@ const projects = [
       'Single page application using ReactJS.',
       'To know the situation in relation to COVID-19.',
     ],
-    link: {
-      href: 'https://github.com/Victor1890/Covid_19-tracker',
+    links: {
+      linkCode: 'https://github.com/Victor1890/Covid_19-tracker',
+      linkWeb: '',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textlink: 'Link to Github',
     },
   },
   {
@@ -61,10 +64,11 @@ const projects = [
       'A Web Site create with Bootstrap.',
       'This website was created to help people with Covid-19',
     ],
-    link: {
-      href: 'http://juventudsolidariard.org/',
+    links: {
+      linkCode: 'http://juventudsolidariard.org/',
+      linkWeb: '',
       isDisabled: false,
-      textLink: 'www.juventudsolidariard.org',
+      textlink: 'www.juventudsolidariard.org',
     },
   },
   {
@@ -78,10 +82,11 @@ const projects = [
       'An App of music create with C#, Bunifu Framework, NAudio and Taglib-Sharp',
       'This app is a music player that contains the basic functions of any player.',
     ],
-    link: {
-      href: 'https://github.com/Victor1890/Reproductor_M-sica',
+    links: {
+      linkCode: 'https://github.com/Victor1890/Reproductor_M-sica',
+      linkWeb: '',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textlink: 'Link to Github',
     },
   },
 ];

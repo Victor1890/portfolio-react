@@ -63,16 +63,9 @@ const About = ({ location: { pathname } }) => {
                   onActive={handlClick}
                   image={project.image}
                   descriptions={project.description}
-                  link={project.link}
-                />
-
-                <ModalPortal
-                  keyId={project.id}
-                  title={project.title}
-                  onActive={showModal}
-                  onClose={handlClose}
-                  descriptions={project.description}
-                  link={project.link.href}
+                  linkCode={project.links.linkCode}
+                  isDisabled={project.links.isDisabled}
+                  textLink={project.links.textlink}
                 />
               </motion.div>
             ))}
