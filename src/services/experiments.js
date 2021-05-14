@@ -14,7 +14,7 @@ const Experiments = [
     link: {
       href: 'https://github.com/Victor1890/API_REST_MONGO',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
   {
@@ -29,7 +29,7 @@ const Experiments = [
     link: {
       href: 'https://github.com/Victor1890/API_CRUD_TS',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
   {
@@ -45,7 +45,7 @@ const Experiments = [
     link: {
       href: 'https://github.com/Victor1890/flappy_bird_unity',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
   {
@@ -62,7 +62,7 @@ const Experiments = [
     link: {
       href: 'https://github.com/Victor1890/Cyberpunk-2077-InGame-Menu',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
   {
@@ -78,7 +78,7 @@ const Experiments = [
     link: {
       href: 'https://github.com/Victor1890/Victor1890_BOT',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
 ];

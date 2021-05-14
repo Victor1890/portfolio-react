@@ -111,22 +111,22 @@ const projects = [
       textLink: 'Link to Code',
     },
   },
-  // {
-  //   id: 7,
-  //   image: {
-  //     src: '/projects/charla.svg',
-  //     alt: 'Chat React Victor Rosario',
-  //   },
-  //   description: [
-  //     'An App create with NodeJs, React and SocketIO',
-  //     `A chat built with technology like ReactJs, Axios to consume the API and Socket to communicate several clients at the same time in real time.`,
-  //   ],
-  //   link: {
-  //     href: 'https://github.com/Victor1890/backend_api',
-  //     isDisabled: false,
-  //     textLink: 'Link to Code',
-  //   },
-  // },
+  {
+    id: 7,
+    image: {
+      src: '/projects/charla.png',
+      alt: 'Chat React Victor Rosario',
+    },
+    description: [
+      'An App create with NodeJs, React and SocketIO',
+      `A chat built with technology like ReactJs, Axios to consume the API and Socket to communicate several clients at the same time in real time.`,
+    ],
+    link: {
+      href: 'https://chat-frontend-react-gamma.vercel.app/',
+      isDisabled: false,
+      textLink: 'Chat React Victor1890',
+    },
+  },
 ];
 
 export default projects;
