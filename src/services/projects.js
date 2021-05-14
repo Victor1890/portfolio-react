@@ -10,9 +10,9 @@ const projects = [
       'Just out of curiosity, I created a Wiki of my favorite animated series to learn a little more about the series.',
     ],
     link: {
-      href: 'https://github.com/Victor1890/rick_and_morty_wiki',
+      href: 'https://rick-and-morty-wiki-two.vercel.app/',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Rick and Morty Wiki',
     },
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     link: {
       href: 'https://github.com/Victor1890/COVID-19-Tracker',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
   {
@@ -42,9 +42,9 @@ const projects = [
       'To know the situation in relation to COVID-19.',
     ],
     link: {
-      href: 'https://github.com/Victor1890/Covid_19-tracker',
+      href: 'https://covid-19-tracker-blush.vercel.app/',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Covid-19 Tracker',
     },
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     link: {
       href: 'http://juventudsolidariard.org/',
       isDisabled: false,
-      textLink: 'www.juventudsolidariard.org',
+      textLink: 'Juventud Solidariard',
     },
   },
   {
@@ -76,9 +76,57 @@ const projects = [
     link: {
       href: 'https://github.com/Victor1890/Reproductor_M-sica',
       isDisabled: false,
-      textLink: 'Link to Github',
+      textLink: 'Link to Code',
     },
   },
+  {
+    id: 5,
+    image: {
+      src: '/projects/dashboard.svg',
+      alt: 'Furt Project',
+    },
+    description: [
+      'An App create with ReactJs and Bootsttrap',
+      `The project was created to manage and administer the products of local companies.`,
+    ],
+    link: {
+      href: 'https://frontend-furt-project.vercel.app/',
+      isDisabled: false,
+      textLink: 'Link to Website',
+    },
+  },
+  {
+    id: 6,
+    image: {
+      src: '/experiments/terminal.svg',
+      alt: 'Furt Project Backend',
+    },
+    description: [
+      'An App create with NodeJs, Axios and MongoDB',
+      `The project was created to be the Backend part of the Furt project.`,
+    ],
+    link: {
+      href: 'https://github.com/Victor1890/backend_api',
+      isDisabled: true,
+      textLink: 'Link to Code',
+    },
+  },
+  // {
+  //   id: 7,
+  //   image: {
+  //     src: '/projects/charla.svg',
+  //     alt: 'Chat React Victor Rosario',
+  //   },
+  //   description: [
+  //     'An App create with NodeJs, React and SocketIO',
+  //     `A chat built with technology like ReactJs, Axios to consume the API and Socket to communicate several clients at the same time in real time.`,
+  //   ],
+  //   link: {
+  //     href: 'https://github.com/Victor1890/backend_api',
+  //     isDisabled: false,
+  //     textLink: 'Link to Code',
+  //   },
+  // },
 ];
 
 export default projects;

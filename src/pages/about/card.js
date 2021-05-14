@@ -53,7 +53,20 @@ const Card = ({ image, descriptions, link, id }) => (
         </Typography>
       ))}
     </CardContent>
-    <Link
+    {link.isDisabled ? (
+      <Link rel="noopener noreferrer" disabled={link.isDisabled}>
+        <Typography fontSize="0.8rem" color="#076aeb">
+          In development <GoTools />
+        </Typography>
+      </Link>
+    ) : (
+      <Link href={link.href} rel="noopener noreferrer" target="_blank">
+        <Typography fontSize="0.8rem" fontWeight={600} color="#076aeb">
+          {link.textLink}
+        </Typography>
+      </Link>
+    )}
+    {/* <Link
       href={link.href}
       rel="noopener noreferrer"
       target="_blank"
@@ -68,7 +81,7 @@ const Card = ({ image, descriptions, link, id }) => (
           {link.textLink}
         </Typography>
       )}
-    </Link>
+    </Link> */}
   </CardWrapper>
 );
 

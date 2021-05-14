@@ -72,15 +72,18 @@ const About = ({ location: { pathname } }) => {
             </Link>
           </Typography>
           <ListWrapper maxWidth="70rem">
-            {projects.map((project) => (
-              <Card
-                id={project.id}
-                key={project.id}
-                image={project.image}
-                descriptions={project.description}
-                link={project.link}
-              />
-            ))}
+            {projects.map((project) => {
+              console.log(project);
+              return (
+                <Card
+                  id={project.id}
+                  key={project.id}
+                  image={project.image}
+                  descriptions={project.description}
+                  link={project.link}
+                />
+              );
+            })}
           </ListWrapper>
         </Wrapper>
         <Divider />
