@@ -31,7 +31,7 @@ const SEO = ({ description, lang, meta, title }) => (
       },
       {
         name: `twitter:creator`,
-        content: `@dsantiagomj`,
+        content: `@Victor_R1890`,
       },
       {
         name: `twitter:title`,

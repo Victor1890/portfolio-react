@@ -12,7 +12,7 @@ const Experiments = [
       'It is a simple crud to become familiar with the language and its environment',
     ],
     link: {
-      href: 'https://github.com/Victor1890/API_REST_MONGO',
+      href: 'https://github.com/Victor1890/API_REST_MONGO#readme',
       isDisabled: false,
       textLink: 'Link to Code',
     },
@@ -27,7 +27,7 @@ const Experiments = [
       "This project was created with the simple fact of learning how to work with the TypeScrpit language and with Hapi (it's like Express)",
     ],
     link: {
-      href: 'https://github.com/Victor1890/API_CRUD_TS',
+      href: 'https://github.com/Victor1890/API_CRUD_TS#readme',
       isDisabled: false,
       textLink: 'Link to Code',
     },
@@ -43,7 +43,7 @@ const Experiments = [
       'I was bored and super curious and for some reason I wanted to know how the flappy bird was made, using unity and super how to do it',
     ],
     link: {
-      href: 'https://github.com/Victor1890/flappy_bird_unity',
+      href: 'https://github.com/Victor1890/flappy_bird_unity#readme',
       isDisabled: false,
       textLink: 'Link to Code',
     },
@@ -68,15 +68,15 @@ const Experiments = [
   {
     id: 5,
     image: {
-      src: '/experiments/music.jpg',
-      alt: 'VictorBOT Discord-Music',
+      src: '/projects/mp3.png',
+      alt: 'MP3 Rosario Player',
     },
     description: [
-      'This BOT is create with JS and DiscordJs',
-      'This bot was created so that I could have my own bot and just out of curiosity, I added the musical function',
+      'An App of music create with C#, Bunifu Framework, NAudio and Taglib-Sharp',
+      'This app is a music player that contains the basic functions of any player.',
     ],
     link: {
-      href: 'https://github.com/Victor1890/Victor1890_BOT',
+      href: 'https://github.com/Victor1890/Reproductor_M-sica#readme',
       isDisabled: false,
       textLink: 'Link to Code',
     },

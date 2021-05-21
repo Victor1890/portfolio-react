@@ -95,8 +95,8 @@ const titleText = '< Hello World />';
 const LandingPage = ({ location: { pathname } }) => (
   <Layout location={pathname}>
     <SEO
-      title="Victor Rosario | Front-End Developer"
-      description="Personal Web Developer Portfolio. I'm a Web developer with emphasis on Front-End and other technology like C#, Python and JavaScript"
+      title="Victor Rosario | Full-Stack Developer"
+      description="Personal Web Developer Portfolio. I'm a Web developer with emphasis on Full-Stack and other technology like C#, Python and JavaScript"
     />
     <Container>
       <Wrapper>

@@ -22,13 +22,13 @@ const projects = [
       alt: 'COVID-19 Tracker',
     },
     description: [
-      'Web application using React, NodeJs, Axios and React Bootstrap.',
+      'Web application using ReactJs, NodeJs, Axios and React Bootstrap.',
       'To know the situation in relation to COVID-19.',
     ],
     link: {
-      href: 'https://github.com/Victor1890/COVID-19-Tracker',
+      href: 'https://covid-19-tracker-v1.vercel.app/',
       isDisabled: false,
-      textLink: 'Link to Code',
+      textLink: 'COVID-19 Tracker V1',
     },
   },
   {
@@ -44,11 +44,11 @@ const projects = [
     link: {
       href: 'https://covid-19-tracker-blush.vercel.app/',
       isDisabled: false,
-      textLink: 'Covid-19 Tracker',
+      textLink: 'Covid-19 Tracker V2',
     },
   },
   {
-    id: 3,
+    id: 4,
     image: {
       src: '/projects/juventud_solidaria.png',
       alt: 'Juventud Solidaria',
@@ -64,55 +64,23 @@ const projects = [
     },
   },
   {
-    id: 4,
-    image: {
-      src: '/projects/mp3.png',
-      alt: 'MP3 Rosario Player',
-    },
-    description: [
-      'An App of music create with C#, Bunifu Framework, NAudio and Taglib-Sharp',
-      'This app is a music player that contains the basic functions of any player.',
-    ],
-    link: {
-      href: 'https://github.com/Victor1890/Reproductor_M-sica',
-      isDisabled: false,
-      textLink: 'Link to Code',
-    },
-  },
-  {
     id: 5,
     image: {
       src: '/projects/dashboard.svg',
       alt: 'Furt Project',
     },
     description: [
-      'An App create with ReactJs and Bootsttrap',
+      'An App create with ReactJs, Bootsttrap',
       `The project was created to manage and administer the products of local companies.`,
     ],
     link: {
       href: 'https://frontend-furt-project.vercel.app/',
       isDisabled: false,
-      textLink: 'Link to Website',
+      textLink: 'Dashboard Furt Project',
     },
   },
   {
     id: 6,
-    image: {
-      src: '/experiments/terminal.svg',
-      alt: 'Furt Project Backend',
-    },
-    description: [
-      'An App create with NodeJs, Axios and MongoDB',
-      `The project was created to be the Backend part of the Furt project.`,
-    ],
-    link: {
-      href: 'https://github.com/Victor1890/backend_api',
-      isDisabled: true,
-      textLink: 'Link to Code',
-    },
-  },
-  {
-    id: 7,
     image: {
       src: '/projects/charla.png',
       alt: 'Chat React Victor Rosario',

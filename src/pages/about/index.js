@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   max-width: 80rem;
 `;
 
-const TextWrapper = styled.h2`
+const TextWrapper = styled.div`
   margin: 0 auto;
   max-width: 36rem;
 `;
@@ -58,8 +58,8 @@ const About = ({ location: { pathname } }) => {
   return (
     <Layout location={pathname}>
       <SEO
-        title="About | Front-End Developer"
-        description="Personal Web Developer Portfolio. I'm a Web developer with emphasis on Front-End and other technology like C#, Python and JavaScript"
+        title="About | Full-Stack Developer"
+        description="Personal Web Developer Portfolio. I'm a Web developer with emphasis on Full-Stack and other technology like C#, Python and JavaScript"
       />
       <Container>
         <Wrapper>
@@ -72,18 +72,15 @@ const About = ({ location: { pathname } }) => {
             </Link>
           </Typography>
           <ListWrapper maxWidth="70rem">
-            {projects.map((project) => {
-              console.log(project);
-              return (
-                <Card
-                  id={project.id}
-                  key={project.id}
-                  image={project.image}
-                  descriptions={project.description}
-                  link={project.link}
-                />
-              );
-            })}
+            {projects.map((project) => (
+              <Card
+                id={project.id}
+                key={project.id}
+                image={project.image}
+                descriptions={project.description}
+                link={project.link}
+              />
+            ))}
           </ListWrapper>
         </Wrapper>
         <Divider />
