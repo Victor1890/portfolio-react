@@ -1,58 +1,21 @@
-import React from 'react';
-import { Link } from '@reach/router';
+import React from "react";
+import { Link } from "@reach/router";
 
-import styled from 'styled-components';
+import projects from "../../services/projects";
+import experiments from "../../services/experiments";
 
-import projects from '../../services/projects';
-import experiments from '../../services/experiments';
-
-import SEO from '../../components/seo';
-import Card from './card';
-import Layout from '../../components/layout';
-import ListWrapper from '../../components/list';
-import { Title, Typography } from '../../components/typography';
-
-const Container = styled.div`
-  background-color: white;
-  margin: 0 auto;
-  min-height: 46rem;
-  width: 100vw;
-`;
-
-const Wrapper = styled.div`
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  max-width: 80rem;
-`;
-
-const TextWrapper = styled.div`
-  margin: 0 auto;
-  max-width: 36rem;
-`;
-
-const CallToAction = styled.span`
-  color: #076aeb;
-  cursor: pointer;
-  font-weight: 550;
-`;
-
-const Divider = styled.div`
-  background-color: #e6ecf8;
-  height: 1px;
-  width: 100vw;
-`;
-
-// const Company = styled.div`
-//   align-items: center;
-//   display: flex;
-//   justify-content: center;
-//   margin: 2rem 0rem;
-//   width: 200px;
-//   @media (min-width: 968px) {
-//     margin: 1rem;
-//   }
-// `;
+import SEO from "../../components/seo";
+import Card from "./card";
+import Layout from "../../components/layout";
+import ListWrapper from "../../components/list";
+import { Title, Typography } from "../../components/typography";
+import {
+  CallToAction,
+  Container,
+  Wrapper,
+  Divider,
+  TextWrapper,
+} from "./style";
 
 const About = ({ location: { pathname } }) => {
   return (
@@ -67,7 +30,7 @@ const About = ({ location: { pathname } }) => {
           <Typography textAlign="center">
             Here a few projects i&apos;ve worked on in the past. Want to see
             more?
-            <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
               <CallToAction> Contact me</CallToAction>
             </Link>
           </Typography>
@@ -108,6 +71,7 @@ const About = ({ location: { pathname } }) => {
             ))} */}
           </ListWrapper>
         </Wrapper>
+        <Divider />
       </Container>
     </Layout>
   );

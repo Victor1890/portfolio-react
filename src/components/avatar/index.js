@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Avatar = styled.div`
   background-image: url(${(props) => props.defaultImage});
@@ -25,7 +25,7 @@ AvatarComponent.propTypes = {
 };
 
 AvatarComponent.defaultProps = {
-  hoverImage: '',
+  hoverImage: "",
 };
 
 export default AvatarComponent;

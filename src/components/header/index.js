@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Link } from '@reach/router';
+import React, { useState } from "react";
+import { Link } from "@reach/router";
 
-import styled from 'styled-components';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import styled from "styled-components";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-import Drawer from './drawer';
-import { DefaultButton } from '../button';
+import Drawer from "./drawer";
+import { DefaultButton } from "../button";
 
 const Container = styled.div`
   align-items: center;
@@ -19,7 +19,7 @@ const Container = styled.div`
   padding: 0 0.5rem;
   padding-top: 3rem;
   width: 100%;
-  zindex: 3;
+  z-index: 3;
   @media (min-width: 1024px) {
     padding-top: 2.5rem;
   }

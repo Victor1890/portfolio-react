@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link } from '@reach/router';
+import React from "react";
+import { Link } from "@reach/router";
 
-import styled from 'styled-components';
-import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai';
-import { GrReactjs } from 'react-icons/gr';
+import styled from "styled-components";
+import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
+import { GrReactjs } from "react-icons/gr";
 
-import Image from '../image';
-import { DefaultButton } from '../button';
-import { Typography } from '../typography';
+import Image from "../image";
+import { DefaultButton } from "../button";
+import { Typography } from "../typography";
 
 const Container = styled.div`
   background-color: #012452;
@@ -88,7 +88,7 @@ const Footer = ({ location }) => {
 
   return (
     <Container>
-      {location !== '/contact' && (
+      {location !== "/contact" && (
         <Paper>
           <Typography
             color="#FFFFFF"
@@ -163,15 +163,15 @@ const Footer = ({ location }) => {
 
       <Copyright>
         <Typography textAlign="center" color="#ffffff" margin="0">
-          Made with{' '}
+          Made with{" "}
         </Typography>
         <GrReactjs
           style={{
-            fontSize: '1rem',
-            marginLeft: '0.25rem',
-            color: 'white',
-            display: 'flex',
-            alignItems: 'center',
+            fontSize: "1rem",
+            marginLeft: "0.25rem",
+            color: "white",
+            display: "flex",
+            alignItems: "center",
           }}
         />
       </Copyright>

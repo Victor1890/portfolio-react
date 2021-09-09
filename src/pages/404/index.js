@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from '@reach/router';
+import React from "react";
+import { Link } from "@reach/router";
 
-import Image from '../../components/image';
-import { CenterContentWrapper } from '../../components/container';
-import { Title, Typography } from '../../components/typography';
-import { DefaultButton } from '../../components/button';
+import Image from "../../components/image";
+import { CenterContentWrapper } from "../../components/container";
+import { Title, Typography } from "../../components/typography";
+import { DefaultButton } from "../../components/button";
 
 const NotFoundPage = () => (
   <CenterContentWrapper>
@@ -13,7 +13,7 @@ const NotFoundPage = () => (
     <Typography fontSize="1.5rem" textAlign="center">
       You just hit a route that doesn&apos;t exist... the sadness.
     </Typography>
-    <Link to="/" style={{ margin: '0 auto' }}>
+    <Link to="/" style={{ margin: "0 auto" }}>
       <DefaultButton value="Return home" minWidth="12.25rem" />
     </Link>
   </CenterContentWrapper>

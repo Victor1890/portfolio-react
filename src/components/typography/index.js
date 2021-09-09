@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const TitleComponent = styled.h2`
   color: ${(props) => props.color};
@@ -34,11 +34,11 @@ Title.propTypes = {
 };
 
 Title.defaultProps = {
-  text: '',
-  color: '#00343d',
-  fontSize: '1rem',
+  text: "",
+  color: "#00343d",
+  fontSize: "1rem",
   fontWeight: 500,
-  children: '',
+  children: "",
 };
 
 export const Typography = ({
@@ -72,11 +72,11 @@ Typography.propTypes = {
 };
 
 Typography.defaultProps = {
-  text: '',
-  color: '#00343d',
-  fontSize: '1rem',
+  text: "",
+  color: "#00343d",
+  fontSize: "1rem",
   fontWeight: 500,
-  textAlign: 'left',
-  margin: '0 0 1em',
-  children: '',
+  textAlign: "left",
+  margin: "0 0 1em",
+  children: "",
 };

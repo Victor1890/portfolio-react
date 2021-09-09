@@ -1,40 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import styled from 'styled-components';
-import { GoTools } from 'react-icons/go';
-
-import Image from '../../components/image';
-import Link from '../../components/link';
-import { Typography } from '../../components/typography';
-
-const CardWrapper = styled.article`
-  align-items: center;
-  border: 1px solid #e6ecf8;
-  border-radius: 12px;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 1px 0 0 #e6ecf8;
-  display: flex;
-  flex-direction: column;
-  height: 25.5rem;
-  justify-content: space-around;
-  margin: 1rem;
-  max-width: 21rem;
-  padding: 2rem;
-  text-align: center;
-  width: 100%;
-`;
-const ImageWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 6rem;
-`;
-const CardContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 10rem;
-`;
+import React from "react";
+import PropTypes from "prop-types";
+import { GoTools } from "react-icons/go";
+import Image from "../../components/image";
+import Link from "../../components/link";
+import { Typography } from "../../components/typography";
+import { CardContent, CardWrapper, ImageWrapper } from "./style";
 
 const Card = ({ image, descriptions, link, id }) => (
   <CardWrapper key={id}>

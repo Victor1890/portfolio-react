@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ImageComponent = styled.img`
   height: ${(props) => props.height};
@@ -42,12 +42,12 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
-  height: 'auto',
-  maxHeight: 'auto',
-  minHeight: 'auto',
-  maxWidth: 'auto',
-  minWidth: 'auto',
-  width: 'auto',
+  height: "auto",
+  maxHeight: "auto",
+  minHeight: "auto",
+  maxWidth: "auto",
+  minWidth: "auto",
+  width: "auto",
 };
 
 export default Image;

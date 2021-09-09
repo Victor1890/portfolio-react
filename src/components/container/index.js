@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ContentWrapperComponent = styled.div`
   animation: fadeInAnimation ease 0.75s;
@@ -11,7 +11,7 @@ const ContentWrapperComponent = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;

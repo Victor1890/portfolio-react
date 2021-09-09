@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Router from './services/router';
+import Router from "./services/router";
 
 function App() {
   return <Router />;

@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ListWrapperComponent = styled.div`
   align-items: center;
@@ -25,8 +25,8 @@ ListWrapper.propTypes = {
 };
 
 ListWrapper.defaultProps = {
-  justifyContent: 'center',
-  maxWidth: 'auto',
+  justifyContent: "center",
+  maxWidth: "auto",
 };
 
 export default ListWrapper;

@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  extends: [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier",
+  ],
+  plugins: ["prettier"],
   env: {
     browser: true,
     commonjs: true,
@@ -8,14 +14,14 @@ module.exports = {
     node: true,
   },
   rules: {
-    'import/prefer-default-export': 'off',
-    'react/prop-types': 'off',
-    'react/jsx-props-no-spreading': 'off',
-    'no-nested-ternary': 'off',
-    'jsx-a11y/href-no-hash': ['off'],
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
-    'max-len': [
-      'warn',
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-nested-ternary": "off",
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-filename-extension": ["warn", { extensions: [".js", ".jsx"] }],
+    "max-len": [
+      "warn",
       {
         code: 80,
         tabWidth: 2,
@@ -28,8 +34,9 @@ module.exports = {
         ignoreRegExpLiterals: true,
       },
     ],
-    'no-use-before-define': 'off',
-    'import/no-unresolved': 'off',
-    'import/extensions': 'off',
+    "no-use-before-define": "OFF",
+    "import/no-unresolved": "OFF",
+    "import/extensions": "OFF",
+    "jsx-a11y/anchor-is-valid": "OFF",
   },
 };

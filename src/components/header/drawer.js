@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from '@reach/router';
+import React from "react";
+import { Link } from "@reach/router";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { DefaultButton } from '../button';
+import { DefaultButton } from "../button";
 
 const ResponsiveMenu = styled.ul`
   align-items: center;
@@ -15,11 +15,11 @@ const ResponsiveMenu = styled.ul`
   justify-content: space-evenly;
   left: 0;
   list-style: none;
-  margin: ${(props) => (props.isOpen ? '0 auto' : '-2500px')};
+  margin: ${(props) => (props.isOpen ? "0 auto" : "-2500px")};
   position: absolute;
   top: 5rem;
   transition: margin 0.5s ease-in-out;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   @media (min-width: 1024px) {
     display: none;
@@ -28,7 +28,7 @@ const ResponsiveMenu = styled.ul`
 
 const ResponsiveItem = styled.li`
   text-align: center;
-  width: 100vw;
+  width: 100%;
   &:hover {
     color: #076aeb;
     cursor: pointer;

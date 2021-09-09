@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const DefaultButtonComponent = styled.input`
   background: transparent;
@@ -36,8 +36,8 @@ DefaultButton.propTypes = {
 };
 
 DefaultButton.defaultProps = {
-  type: 'submit',
-  minWidth: 'auto',
+  type: "submit",
+  minWidth: "auto",
 };
 
 export const TransitionButton = ({ value, type, minWidth }) => (
@@ -51,6 +51,6 @@ TransitionButton.propTypes = {
 };
 
 TransitionButton.defaultProps = {
-  type: 'submit',
-  minWidth: 'auto',
+  type: "submit",
+  minWidth: "auto",
 };

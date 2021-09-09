@@ -1,11 +1,11 @@
-import React from 'react';
-import { Router } from '@reach/router';
+import React from "react";
+import { Router } from "@reach/router";
 
-import LandingPage from '../pages/landing';
-import AboutPage from '../pages/about';
-import ContactPage from '../pages/contact';
-import SuccessPage from '../pages/success';
-import ErrorPage from '../pages/404';
+import LandingPage from "../pages/landing";
+import AboutPage from "../pages/about";
+import ContactPage from "../pages/contact";
+import SuccessPage from "../pages/success";
+import ErrorPage from "../pages/404";
 
 const AppRouter = () => (
   <Router>

@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const LinkComponent = styled.a`
-  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: #076aeb;
   margin: 0 auto;
   text-decoration: none;
