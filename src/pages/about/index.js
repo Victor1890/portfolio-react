@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 
+import works from "../../services/works";
 import projects from "../../services/projects";
 import experiments from "../../services/experiments";
 
@@ -26,14 +27,29 @@ const About = ({ location: { pathname } }) => {
       />
       <Container>
         <Wrapper>
-          <Title text="My Work" fontSize="1.75rem" fontWeight={700} />
+          <Title text="My Works" fontSize="1.75rem" fontWeight={700} />
           <Typography textAlign="center">
             Here a few projects i&apos;ve worked on in the past. Want to see
             more?
             <Link to="/contact" style={{ textDecoration: "none" }}>
-              <CallToAction> Contact me</CallToAction>
+              <CallToAction>Contact me</CallToAction>
             </Link>
           </Typography>
+          <ListWrapper maxWidth="70rem">
+            {works.map((work) => (
+              <Card
+                id={work.id}
+                key={work.id}
+                image={work.image}
+                descriptions={work.description}
+                link={work.link}
+              />
+            ))}
+          </ListWrapper>
+        </Wrapper>
+        <Divider />
+        <Wrapper>
+          <Title text="My Projects" fontSize="1.75rem" fontWeight={700} />
           <ListWrapper maxWidth="70rem">
             {projects.map((project) => (
               <Card
@@ -71,7 +87,6 @@ const About = ({ location: { pathname } }) => {
             ))} */}
           </ListWrapper>
         </Wrapper>
-        <Divider />
       </Container>
     </Layout>
   );

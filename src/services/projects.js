@@ -50,38 +50,6 @@ const projects = [
   {
     id: 4,
     image: {
-      src: "/projects/juventud_solidaria.png",
-      alt: "Juventud Solidaria",
-    },
-    description: [
-      "A Web Site create with Bootstrap.",
-      "This website was created to help people with Covid-19",
-    ],
-    link: {
-      href: "http://juventudsolidariard.org/",
-      isDisabled: false,
-      textLink: "Juventud Solidariard",
-    },
-  },
-  {
-    id: 5,
-    image: {
-      src: "/projects/dashboard.svg",
-      alt: "Furt Project",
-    },
-    description: [
-      "An App create with ReactJs, Bootsttrap",
-      `The project was created to manage and administer the products of local companies.`,
-    ],
-    link: {
-      href: "https://frontend-furt-project.vercel.app/",
-      isDisabled: false,
-      textLink: "Dashboard Furt Project",
-    },
-  },
-  {
-    id: 6,
-    image: {
       src: "/projects/charla.png",
       alt: "Chat React Victor Rosario",
     },

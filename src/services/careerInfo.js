@@ -17,7 +17,8 @@ const careerInfo = [
     title: "Frontend Development",
     description:
       "I consider the visual part to be important to us and I think. I am the person to create great experiences for your websites.",
-    knowledgeList: "HTML5, CSS3, Sass, JavaScript, ReactJs, NextJs",
+    knowledgeList:
+      "HTML5, CSS3, JavaScript, Sass, React.JS, Next.JS, Angular 9+, WordPress",
   },
   {
     id: 3,
@@ -25,7 +26,7 @@ const careerInfo = [
     title: "Backend Develoment & Others",
     description: `A visually impressive site but without functionality, is the same as being rich and not knowing what to spend on, to avoid this, I am also a person capable of creating both visual and functional websites.`,
     knowledgeList:
-      "Terminal, Git, Github, ASP.NET C#, JavaScript, TypeScript, NodeJs, ExpressJs, MongoDB, SQL Server.",
+      "Terminal, Git (Github + Gitlab + Bitbucket), ASP.NET C# (basic), JavaScript, TypeScript, Node.JS, Express.JS, MongoDB, SQL Server (basic).",
   },
 ];
 
