@@ -9,7 +9,7 @@ const careerInfo = [
     icon: <DiWindows />,
     title: `Operative System`,
     description: `I consider myself a super curious person and when it comes to experimenting with OS and I consider all this to be a great experience.`,
-    knowledgeList: `Windows, GNU/Linux: Ubuntu`,
+    knowledgeList: `Windows, GNU/Linux: Ubuntu, Docker (basic)`,
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const careerInfo = [
     description:
       "I consider the visual part to be important to us and I think. I am the person to create great experiences for your websites.",
     knowledgeList:
-      "HTML5, CSS3, JavaScript, Sass, React.JS, Next.JS, Angular 9+, WordPress",
+      "HTML5, CSS3, JavaScript, Sass, React.JS, Next.JS, WordPress",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const careerInfo = [
     title: "Backend Develoment & Others",
     description: `A visually impressive site but without functionality, is the same as being rich and not knowing what to spend on, to avoid this, I am also a person capable of creating both visual and functional websites.`,
     knowledgeList:
-      "Terminal, Git (Github + Gitlab + Bitbucket), ASP.NET C# (basic), JavaScript, TypeScript, Node.JS, Express.JS, MongoDB, SQL Server (basic).",
+      "Git, JavaScript, TypeScript, Node JS, SQL/PL, PostgreSQL, TypeORM, Sequelize, etc",
   },
 ];
 

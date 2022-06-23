@@ -39,6 +39,12 @@ const Image = ({
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  maxHeight: PropTypes.string,
+  minHeight: PropTypes.string,
+  maxWidth: PropTypes.string,
+  minWidth: PropTypes.string,
+  width: PropTypes.string,
 };
 
 Image.defaultProps = {

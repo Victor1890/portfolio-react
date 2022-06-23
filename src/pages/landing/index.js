@@ -21,6 +21,7 @@ import {
   PaperComponent,
   TextWrapper,
 } from "./style";
+import config from "../../config";
 
 const titleText = "< Hello World />";
 
@@ -104,7 +105,7 @@ const LandingPage = ({ location: { pathname } }) => (
             </TextWrapper>
             <ButtonWrapper>
               <a
-                href={`${process.env.REACT_APP_RESUME_URL}`}
+                href={`${config.urlResume}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ margin: " 0 auto" }}

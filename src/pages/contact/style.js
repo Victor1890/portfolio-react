@@ -35,6 +35,7 @@ export const FieldWrapper = styled.p`
 export const Label = styled.label`
   color: #2833478a;
   margin-bottom: 0.75rem;
+  font-weight: ${(props) => props.fontWeight};
 `;
 export const Input = styled.input`
   background-color: white;
@@ -57,4 +58,9 @@ export const TextArea = styled.textarea`
   max-width: 100%;
   min-width: 100%;
   width: 100%;
+  padding: 1rem;
 `;
+
+Label.defaultProps = {
+  fontWeight: 600,
+};

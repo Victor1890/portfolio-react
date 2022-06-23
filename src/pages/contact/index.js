@@ -13,6 +13,7 @@ import {
   SectionTitle,
   TextArea,
 } from "./style";
+import config from "../../config";
 
 const Contact = ({ location: { pathname } }) => {
   const [name, setName] = useState("");
@@ -27,7 +28,7 @@ const Contact = ({ location: { pathname } }) => {
     formData.append("email", email);
     formData.append("message", message);
 
-    const endPoint = `${process.env.REACT_APP_REQUEST_URL}`;
+    const endPoint = config.urlContact;
     const baseUrl = window.location.origin;
 
     await fetch(endPoint, { method: "POST", body: formData })
@@ -53,8 +54,9 @@ const Contact = ({ location: { pathname } }) => {
       <Form onSubmit={handleSubmit} autoComplete="on" method="POST">
         <Row>
           <FieldWrapper>
-            <Label>Your name</Label>
+            <Label htmlFor="name">Your name</Label>
             <Input
+              id="name"
               type="text"
               name="name"
               required
@@ -63,8 +65,9 @@ const Contact = ({ location: { pathname } }) => {
             />
           </FieldWrapper>
           <FieldWrapper last>
-            <Label>Your Email</Label>
+            <Label htmlFor="email">Your Email</Label>
             <Input
+              id="email"
               type="email"
               name="email"
               required
@@ -74,8 +77,9 @@ const Contact = ({ location: { pathname } }) => {
           </FieldWrapper>
         </Row>
         <FieldWrapper>
-          <Label>Your message</Label>
+          <Label htmlFor="message">Your message</Label>
           <TextArea
+            id="message"
             name="message"
             required
             wrap="hard"
