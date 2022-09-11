@@ -7,7 +7,7 @@ export const Container = styled.div`
   min-height: ${(props) => (props.variantBackground ? "34rem" : "46rem")};
   padding: 2rem;
   padding-bottom: ${(props) => (props.variantBackground ? "6rem" : "0")};
-  width: 100vw;
+  width: 100%;
 `;
 export const CenteredContainer = styled(Container)`
   display: flex;
@@ -75,7 +75,7 @@ export const Column = styled.div`
   @media (min-width: 768px) {
     border-bottom: 0px solid #e6ecf8;
     border-right: ${(props) =>
-      props.lastColumn ? "0px solid #e6ecf8" : "1px solid #e6ecf8"};
+    props.lastColumn ? "0px solid #e6ecf8" : "1px solid #e6ecf8"};
     width: 30rem;
   }
 `;

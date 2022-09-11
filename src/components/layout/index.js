@@ -9,6 +9,7 @@ import { ContentWrapper } from "../container";
 
 const Main = styled.main`
   margin: 0 auto;
+  width: 100%;
 `;
 
 const Layout = ({ children, location }) => {

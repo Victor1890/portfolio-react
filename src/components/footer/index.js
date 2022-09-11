@@ -36,7 +36,7 @@ const ImageWrapper = styled.div`
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  width: 100vw;
+  width: 100%;
 `;
 
 const List = styled.ul`

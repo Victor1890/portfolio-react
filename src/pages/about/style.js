@@ -32,7 +32,7 @@ export const Container = styled.div`
   background-color: white;
   margin: 0 auto;
   min-height: 46rem;
-  width: 100vw;
+  width: 100%;
 `;
 
 export const Wrapper = styled.div`
@@ -56,7 +56,7 @@ export const CallToAction = styled.span`
 export const Divider = styled.div`
   background-color: #e6ecf8;
   height: 1px;
-  width: 100vw;
+  width: 100%;
 `;
 
 export const Company = styled.div`

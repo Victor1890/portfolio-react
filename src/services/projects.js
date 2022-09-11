@@ -2,6 +2,21 @@ const projects = [
   {
     id: 1,
     image: {
+      src: "https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8yMjE2ODA5NjllZWNhZjcyZWZkMzk2MDBkOTA1N2FkMT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.rnJA-_sG9SYF2TUcVEkNLugzpYdTv1PlVkN5dyiLnFA",
+      alt: "NPM Package victor1890",
+    },
+    description: [
+      "A personal card for Victor Jesús Rosario Vásquez (@Victor1890)"
+    ],
+    link: {
+      href: "https://www.npmjs.com/package/victor1890",
+      isDisabled: false,
+      textLink: "NPM Package victor1890",
+    },
+  },
+  {
+    id: 2,
+    image: {
       src: "/projects/Rick_and_Morty.png",
       alt: "Rick and Morty Wiki",
     },
@@ -16,7 +31,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     image: {
       src: "/projects/covid-19.png",
       alt: "COVID-19 Tracker",
@@ -32,7 +47,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     image: {
       src: "/projects/covid-19-v2.jpg",
       alt: "COVID-19 Tracker V2",
@@ -48,7 +63,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     image: {
       src: "/projects/charla.png",
       alt: "Chat React Victor Rosario",

@@ -10,8 +10,8 @@ const ContentWrapperComponent = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;
