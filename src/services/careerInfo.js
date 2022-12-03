@@ -10,7 +10,7 @@ const careerInfo = [
     title: "Operative System",
     description:
       "I consider myself a super curious person and when it comes to experimenting with OS and I consider all this to be a great experience.",
-    knowledgeList: "Windows, GNU/Linux: Ubuntu, Docker (basic)"
+    knowledgeList: "Windows, GNU/Linux"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const careerInfo = [
     description:
       "A visually impressive site but without functionality, is the same as being rich and not knowing what to spend on, to avoid this, I am also a person capable of creating both visual and functional websites.",
     knowledgeList:
-      'Git, JavaScript, TypeScript, Node JS, SQL/PL, PostgreSQL, TypeORM, Sequelize, etc'
+      'Git, JavaScript, TypeScript, Node.JS, PL/SQL, PostgreSQL, TypeORM, Sequelize, Docker, etc'
   }
 ];
 

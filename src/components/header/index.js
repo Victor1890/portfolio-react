@@ -64,41 +64,27 @@ const ResponsiveButton = styled.button`
 const Header = () => {
   // responsive navbar status
   const [navbarStatus, setNavbarStatus] = useState(false);
+  const style = {
+    color: `#141c3a`,
+    textDecoration: `none`,
+  }
 
   return (
     <Container>
-      <Link
-        to="/"
-        style={{
-          color: `#141c3a`,
-          textDecoration: `none`,
-          zIndex: 3,
-        }}
-      >
+      <Link to="/" style={{ ...style, zIndex: 3 }} >
         <img
           style={{ margin: 0 }}
           src="/black_logo.png"
-          alt="DS Logo"
+          alt="Victor Rosario Logo"
           width="150px"
+          height="100%"
         />
       </Link>
       <Menu>
-        <Link
-          to="/about"
-          style={{
-            color: `#141c3a`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link to="/about" style={style} >
           <MenuItem>About me</MenuItem>
         </Link>
-        <Link
-          to="/contact"
-          style={{
-            color: `#141c3a`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link to="/contact" style={style} >
           <MenuItem>
             <DefaultButton value="Get in touch" />
           </MenuItem>

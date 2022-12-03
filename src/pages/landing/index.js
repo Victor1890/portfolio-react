@@ -1,27 +1,23 @@
-import React from "react";
 import { Link } from "@reach/router";
-import careerInfo from "../../services/careerInfo";
-import Paper from "./paper";
-import SEO from "../../components/seo";
-import Layout from "../../components/layout";
+import React from "react";
 import Avatar from "../../components/avatar";
 import Image from "../../components/image";
-import { TransitionButton } from "../../components/button";
+import Layout from "../../components/layout";
+import ListWrapper from "../../components/list";
+import SEO from "../../components/seo";
 import { Title, Typography } from "../../components/typography";
+import careerInfo from "../../services/careerInfo";
+import Experiments from "../../services/experiments";
+import projects from "../../services/projects";
+import works from "../../services/works";
+import Card from "../about/card";
+import { CallToAction, Divider } from "../about/style";
+import Paper from "./paper";
 import {
-  ImgWrapper,
-  Container,
-  Wrapper,
-  TitleWrapper,
-  ButtonWrapper,
   CenteredContainer,
-  CenteredWrapper,
-  Column,
-  ColumnWrapper,
-  PaperComponent,
-  TextWrapper,
+  CenteredWrapper, Container, ImgWrapper, PaperComponent,
+  TextWrapper, TitleWrapper, Wrapper
 } from "./style";
-import config from "../../config";
 
 const titleText = "< Hello World />";
 
@@ -44,7 +40,7 @@ const LandingPage = ({ location: { pathname } }) => (
         </Typography>
         <Avatar defaultImage="/avatar.svg" hoverImage="/hover_avatar.svg" />
         <ImgWrapper>
-          <Image src="/hero.svg" alt="" />
+          <Image src="/hero.svg" alt="Victor Rosario Hero" height="100%" width="100%" />
         </ImgWrapper>
       </Wrapper>
     </Container>
@@ -78,12 +74,12 @@ const LandingPage = ({ location: { pathname } }) => (
             />
           ))}
         </PaperComponent>
-        <TitleWrapper>
+        {/* <TitleWrapper>
           <Title fontSize="1.5rem" fontWeight={800}>
             Learn more about me
           </Title>
-        </TitleWrapper>
-        <ColumnWrapper>
+        </TitleWrapper> */}
+        {/* <ColumnWrapper>
           <Column>
             <TextWrapper>
               <Typography textAlign="center">
@@ -114,7 +110,71 @@ const LandingPage = ({ location: { pathname } }) => (
               </a>
             </ButtonWrapper>
           </Column>
-        </ColumnWrapper>
+        </ColumnWrapper> */}
+      </Wrapper>
+
+      <Divider />
+
+      <Wrapper style={{ paddingTop: "5%", }}>
+        <Title text="My Works" fontSize="1.75rem" fontWeight={700} />
+        <Typography textAlign="center">
+          Here a few projects i&apos;ve worked on in the past. Want to see
+          more?
+          <Link to="/contact" style={{ textDecoration: "none", padding: "0 0 0 1%" }}>
+            <CallToAction>Contact me</CallToAction>
+          </Link>
+        </Typography>
+        <ListWrapper maxWidth="70rem">
+          {works.map((work) => (
+            <Card
+              id={work.id}
+              key={work.id}
+              image={work.image}
+              descriptions={work.description}
+              link={work.link}
+            />
+          ))}
+        </ListWrapper>
+      </Wrapper>
+      <Divider />
+      <Wrapper>
+        <Title text="My Projects" fontSize="1.75rem" fontWeight={700} />
+        <ListWrapper maxWidth="70rem">
+          {projects.map((project) => (
+            <Card
+              id={project.id}
+              key={project.id}
+              image={project.image}
+              descriptions={project.description}
+              link={project.link}
+            />
+          ))}
+        </ListWrapper>
+      </Wrapper>
+      <Divider />
+      <Wrapper>
+        <TextWrapper>
+          <Title text="My Experiments" fontSize="1.75rem" fontWeight={700} />
+          {/* <Typography fontSize="1.75rem" fontWeight={700} textAlign="center">
+              I&apos;m proud to have collaborated with some awesome companies:
+            </Typography> */}
+        </TextWrapper>
+        <ListWrapper maxWidth="70rem" justifyContent="space-evenly">
+          {Experiments.map((experiment) => (
+            <Card
+              id={experiment.id}
+              key={experiment.id}
+              image={experiment.image}
+              descriptions={experiment.description}
+              link={experiment.link}
+            />
+          ))}
+          {/* {companies.map((company) => (
+              <Company key={company.id}>
+                <Image alt={company.name} src={company.logo} maxHeight="7rem" />
+              </Company>
+            ))} */}
+        </ListWrapper>
       </Wrapper>
     </Container>
   </Layout>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "@reach/router";
 
 import styled from "styled-components";
@@ -83,8 +83,10 @@ const Copyright = styled.div`
 `;
 
 const Footer = ({ location }) => {
-  const date = new Date();
-  const currentYear = date.getFullYear();
+
+  const [time,] = useState(new Date());
+  // const date = new Date();
+  // const currentYear = date.getFullYear();
 
   return (
     <Container>
@@ -127,6 +129,7 @@ const Footer = ({ location }) => {
           href="https://github.com/Victor1890"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Victor Rosario Github Profile"
         >
           <ListItem>
             <Icon>
@@ -139,6 +142,7 @@ const Footer = ({ location }) => {
           href="https://www.linkedin.com/in/victor-j-rosario-v/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Victor Rosario LinkedIn Profile"
         >
           <ListItem>
             <Icon>
@@ -149,6 +153,7 @@ const Footer = ({ location }) => {
         <a
           href="mailto:victorrosariodeveloper@gmail.com"
           rel="noopener noreferrer"
+          aria-label="Victor Rosario Email"
         >
           <ListItem>
             <Icon>
@@ -158,7 +163,7 @@ const Footer = ({ location }) => {
         </a>
       </List>
       <Typography textAlign="center" color="#ffffff">
-        Victor J. Rosario V. - © {currentYear}
+        Victor J. Rosario V. - © {time.getFullYear()}
       </Typography>
 
       <Copyright>

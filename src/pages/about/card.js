@@ -14,6 +14,8 @@ const Card = ({ image, descriptions, link, id }) => (
         src={image.src}
         maxHeight="6rem"
         maxWidth="10rem"
+        height="100%"
+        width="100%"
       />
     </ImageWrapper>
     <CardContent>
