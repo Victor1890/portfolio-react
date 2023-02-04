@@ -2,11 +2,11 @@ const projects = [
   {
     id: 1,
     image: {
-      src: "https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8yMjE2ODA5NjllZWNhZjcyZWZkMzk2MDBkOTA1N2FkMT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.rnJA-_sG9SYF2TUcVEkNLugzpYdTv1PlVkN5dyiLnFA",
+      src: "/projects/npm-victor1890.png",
       alt: "NPM Package victor1890",
     },
     description: [
-      "A personal card for Victor Jesús Rosario Vásquez (@Victor1890)"
+      "A personal card for Victor Jesus Rosario Vasquez (@Victor1890)"
     ],
     link: {
       href: "https://www.npmjs.com/package/victor1890",

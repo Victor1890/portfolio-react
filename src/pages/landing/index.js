@@ -40,7 +40,7 @@ const LandingPage = ({ location: { pathname } }) => (
         </Typography>
         <Avatar defaultImage="/avatar.svg" hoverImage="/hover_avatar.svg" />
         <ImgWrapper>
-          <Image src="/hero.svg" alt="Victor Rosario Hero" height="100%" width="100%" />
+          <Image src="/hero.svg" alt="Victor Rosario Hero" height="100%" width="80%" />
         </ImgWrapper>
       </Wrapper>
     </Container>
